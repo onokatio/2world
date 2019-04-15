@@ -1,0 +1,24 @@
+public class fifo{
+
+  static char date[512];
+  static boolean put[512];
+  static int w_next = 0;
+  static int r_next = 0;
+
+  public static boolean put(char date){
+    if(put[this.w_next] == 1) return -1;
+    if(this.w_next > 512) this.w_next = 0;
+
+    this.date[this.w_next] = date;
+    this.put[this.w_next] = 1;
+    this.w_next++;
+    }
+  }
+  public static char read(){
+    if(this.put[this.r_next] == 0) return -1;
+    if(this.r_next > 512) this.r_next = 0;
+
+    this.r_next++;
+    return this.date[this,r_next];
+  }
+}

@@ -1,0 +1,13 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import java.util.*;
+import java.util.Timer;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+
+
+public class Far{
+  ArrayList<U> ua = new ArrayList<U>();
+}
